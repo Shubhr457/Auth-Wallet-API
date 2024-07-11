@@ -1,10 +1,10 @@
-const express = require('express');
-const { transfer, transactionHistory } = require('../controllers/transaction');
-const checkAuth = require("../middlewares/middleware")
+import express from 'express';
+import { transfer, transactionHistory } from '../controllers/transaction';
+import checkAuth from '../middlewares/middleware';
 
 const router = express.Router();
 
 router.post('/transfer', transfer);
 router.get('/history', checkAuth,transactionHistory);
 
-module.exports= router
+export default router;
