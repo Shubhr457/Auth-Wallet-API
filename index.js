@@ -1,10 +1,11 @@
-require('dotenv').config();
-const express = require("express");
-const cors = require('cors');
-const {connectToMongoDB} = require("./config/connect");
-const userRoutes = require('./routes/userRoutes')
-const transaction = require('./routes/transaction');
+import dotenv from 'dotenv';
+dotenv.config();
 
+import express from 'express';
+import cors from 'cors';
+import { connectToMongoDB } from './config/connect';
+import userRoutes from './routes/userRoutes';
+import transaction from './routes/transaction';
 const app = express();
 const port = process.env.PORT; // Ensure this matches your .env file (case-sensitive)
 const DATABASE_URL = process.env.DATABASE_URL;
