@@ -1,8 +1,6 @@
-const express = require('express')
-const {userRegistration,userLogin,loggedUser} = require('../controllers/userController')
-const router = express.Router();
-const checkAuth = require("../middlewares/middleware")
-
+import express from 'express';
+import { userRegistration, userLogin, loggedUser } from '../controllers/userController';
+import checkAuth from '../middlewares/middleware';
 
 router.use('/loggeduser',checkAuth)
 
@@ -12,4 +10,4 @@ router.post("/login",userLogin)
 router.get('/loggeduser',loggedUser)
 
 
-module.exports=router;
+export default router;
