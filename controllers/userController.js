@@ -1,8 +1,9 @@
-const UserModel = require('../models/user')
-const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
-const transporter = require("../config/sendEmail")
-const sendEmail = require('../config/sendEmail');
+import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
+import transporter from '../config/sendEmail';
+import sendEmail from '../config/sendEmail';
+import UserModel from '../models/user';
+
 
 const userRegistration = async (req, res) => {
   const { name, email, password, password_confirmation, tc } = req.body;
@@ -82,9 +83,4 @@ const userRegistration = async (req, res) => {
 
 
   
-  module.exports = {
-    userRegistration,
-    userLogin,
-    loggedUser,
-    
-  };
+  export { userRegistration, userLogin, loggedUser };
