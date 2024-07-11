@@ -4,7 +4,7 @@ Sure, here is a detailed README file for your Auth Wallet API project:
 
 # Auth Wallet API
 
-Hosted url :- https://auth-wallet-api.onrender.com
+Hosted url :- [https://auth-wallet-api.onrender.com](https://auth-wallet-api.onrender.com)
 
 This is an authentication wallet API built with Node.js, Express.js, MongoDB, Mongoose, JWT (JSON Web Token), and bcrypt. The API provides user registration and login functionality, ensuring secure authentication using JWT and password hashing with bcrypt.
 
