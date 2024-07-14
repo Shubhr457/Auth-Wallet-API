@@ -1,9 +1,8 @@
-import bcrypt from 'bcrypt';
-import jwt from 'jsonwebtoken';
-import transporter from '../config/sendEmail';
-import sendEmail from '../config/sendEmail';
-import UserModel from '../models/user';
-
+const UserModel = require('../models/user')
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+const transporter = require("../config/sendEmail")
+const sendEmail = require('../config/sendEmail');
 
 const userRegistration = async (req, res) => {
   const { name, email, password, password_confirmation, tc } = req.body;
@@ -59,7 +58,6 @@ const userRegistration = async (req, res) => {
         if (user != null) {
           const isMatch = await bcrypt.compare(password, user.password)
           if ((user.email === email) && isMatch) {
-            // Generate JWT Token
             const token = jwt.sign({ userID: user._id }, process.env.JWT_SECRET_KEY, { expiresIn: '5d' })
             res.send({ "status": "success", "message": "Login Success", "token": token })
           } else {
@@ -83,4 +81,9 @@ const userRegistration = async (req, res) => {
 
 
   
-  export { userRegistration, userLogin, loggedUser };
+  module.exports = {
+    userRegistration,
+    userLogin,
+    loggedUser,
+    
+  };
