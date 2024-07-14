@@ -1,8 +1,8 @@
-import User from "../models/user.js";
-import Transaction from "../models/transaction.js";
-import sendEmail from '../config/sendEmail.js';
+const User = require("../models/user.js");
+const Transaction = require("../models/transaction.js")
+const sendEmail = require('../config/sendEmail.js');
 
-export const transfer = async (req, res) => {
+const transfer = async (req, res) => {
   try {
     const { receiver, amount, sender } = req.body;
 
@@ -57,7 +57,7 @@ export const transfer = async (req, res) => {
   }
 };
 
-export const transactionHistory = async (req, res) => {
+const transactionHistory = async (req, res) => {
   try {
     console.log('transactionHistory endpoint called');
 
@@ -83,3 +83,4 @@ export const transactionHistory = async (req, res) => {
 };
 
 
+module.exports={ transfer, transactionHistory };
