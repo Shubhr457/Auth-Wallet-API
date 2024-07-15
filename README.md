@@ -270,6 +270,11 @@ module.exports = router;
 ![Screenshot 2024-07-11 150742](https://github.com/Shubhr457/Auth-Wallet-API/assets/136572711/d3a14d3d-af2c-49f4-af11-4e76cf86816e)
 ![Screenshot 2024-07-11 150724](https://github.com/Shubhr457/Auth-Wallet-API/assets/136572711/a22b226e-4868-45d6-8657-62e3af18c610)
 
+![image](https://github.com/user-attachments/assets/b9012f77-4d86-4546-9fd2-3816227471e8)
+![image](https://github.com/user-attachments/assets/3870b452-2611-455c-b3b8-06f13bf64e34)
+
+
+
 Postman Collection
 
 ![image](https://github.com/user-attachments/assets/d26061fd-0873-41c1-8033-44d633939cfc)
