@@ -1,8 +1,11 @@
+Here is the organized version of your README file:
+
+---
 
 # Auth Wallet API
 
-Hosted url :- [https://auth-wallet-api.onrender.com](https://auth-wallet-api.onrender.com)
-postman documentation url :- https://documenter.getpostman.com/view/36572624/2sA3kPp4UP
+Hosted URL: [https://auth-wallet-api.onrender.com](https://auth-wallet-api.onrender.com)  
+Postman Documentation URL: [https://documenter.getpostman.com/view/36572624/2sA3kPp4UP](https://documenter.getpostman.com/view/36572624/2sA3kPp4UP)
 
 This is an authentication wallet API built with Node.js, Express.js, MongoDB, Mongoose, JWT (JSON Web Token), and bcrypt. The API provides user registration and login functionality, ensuring secure authentication using JWT and password hashing with bcrypt.
 
@@ -15,6 +18,9 @@ This is an authentication wallet API built with Node.js, Express.js, MongoDB, Mo
 - [Error Handling](#error-handling)
 - [Contributing](#contributing)
 - [License](#license)
+- [Example Code Snippets](#example-code-snippets)
+- [Testing with Postman](#testing-with-postman)
+- [Screenshots](#screenshots)
 
 ## Installation
 
@@ -150,8 +156,6 @@ Contributions are welcome! Please create a pull request or open an issue to disc
 
 This project is licensed under the MIT License.
 
----
-
 ## Example Code Snippets
 
 ### User Model
@@ -260,7 +264,12 @@ module.exports = router;
 
     - Copy the token from the response and include it in the `Authorization` header for protected routes.
 
----
+## Screenshots
+
+### Postman Collection
+
+![image](https://github.com/user-attachments/assets/fd0d98df-ee07-4075-b41f-e0314004ebb6)
+
 
 ![Screenshot 2024-07-11 150820](https://github.com/Shubhr457/Auth-Wallet-API/assets/136572711/3402715c-f78c-41d2-88dd-e9441b113327)
 ![Screenshot 2024-07-11 150807](https://github.com/Shubhr457/Auth-Wallet-API/assets/136572711/e4412730-186d-4d62-b757-3ca6842135e1)
@@ -268,12 +277,6 @@ module.exports = router;
 ![Screenshot 2024-07-11 150742](https://github.com/Shubhr457/Auth-Wallet-API/assets/136572711/d3a14d3d-af2c-49f4-af11-4e76cf86816e)
 ![Screenshot 2024-07-11 150724](https://github.com/Shubhr457/Auth-Wallet-API/assets/136572711/a22b226e-4868-45d6-8657-62e3af18c610)
 
-![image](https://github.com/user-attachments/assets/b9012f77-4d86-4546-9fd2-3816227471e8)
-![image](https://github.com/user-attachments/assets/3870b452-2611-455c-b3b8-06f13bf64e34)
+---
 
-
-
-Postman Collection
-
-![image](https://github.com/user-attachments/assets/d26061fd-0873-41c1-8033-44d633939cfc)
-
+This organized README provides clear instructions and documentation for your Auth Wallet API project.
