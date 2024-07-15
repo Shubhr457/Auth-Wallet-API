@@ -1,7 +1,3 @@
-Here is the organized version of your README file:
-
----
-
 # Auth Wallet API
 
 Hosted URL: [https://auth-wallet-api.onrender.com](https://auth-wallet-api.onrender.com)  
