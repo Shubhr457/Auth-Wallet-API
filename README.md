@@ -1,8 +1,7 @@
 # Auth Wallet API
 
 Hosted URL: [https://auth-wallet-api.onrender.com](https://auth-wallet-api.onrender.com)  
-Postman Documentation URL: [https://documenter.getpostman.com/view/36572624/2sA3kPp4UP](https://documenter.getpostman.com/view/36572624/2sA3kPp4UP)
-
+Postman Documentation URL: [https://documenter.getpostman.com/view/36572624/2sA3kPp4UP](https://documenter.getpostman.com/view/36572624/2sA3kPp4UP) .
 This is an authentication wallet API built with Node.js, Express.js, MongoDB, Mongoose, JWT (JSON Web Token), and bcrypt. The API provides user registration and login functionality, ensuring secure authentication using JWT and password hashing with bcrypt.
 
 ## Table of Contents
@@ -264,15 +263,10 @@ module.exports = router;
 
 ### Postman Collection
 
-![image](https://github.com/user-attachments/assets/fd0d98df-ee07-4075-b41f-e0314004ebb6)
+![Screenshot 2024-07-17 202550](https://github.com/user-attachments/assets/abeb2a08-f250-4251-b084-43eaa4d6c72c)
+![Screenshot 2024-07-17 202536](https://github.com/user-attachments/assets/6b74af6b-5d4e-4c00-8d1c-048ce920a64d)
+![Screenshot 2024-07-17 202522](https://github.com/user-attachments/assets/b5b0365c-f7c5-4f17-9117-c08af21e5823)
+![Screenshot 2024-07-17 202504](https://github.com/user-attachments/assets/93e6f0f5-6bcc-465a-86a5-f0bbf0a90b77)
+![Screenshot 2024-07-17 202447](https://github.com/user-attachments/assets/b18617d5-7e01-48ac-a46a-dd0411874bca)
 
 
-![Screenshot 2024-07-11 150820](https://github.com/Shubhr457/Auth-Wallet-API/assets/136572711/3402715c-f78c-41d2-88dd-e9441b113327)
-![Screenshot 2024-07-11 150807](https://github.com/Shubhr457/Auth-Wallet-API/assets/136572711/e4412730-186d-4d62-b757-3ca6842135e1)
-![Screenshot 2024-07-11 150753](https://github.com/Shubhr457/Auth-Wallet-API/assets/136572711/fdb6091e-dd6e-4585-a891-e771d2ddd16f)
-![Screenshot 2024-07-11 150742](https://github.com/Shubhr457/Auth-Wallet-API/assets/136572711/d3a14d3d-af2c-49f4-af11-4e76cf86816e)
-![Screenshot 2024-07-11 150724](https://github.com/Shubhr457/Auth-Wallet-API/assets/136572711/a22b226e-4868-45d6-8657-62e3af18c610)
-
----
-
-This organized README provides clear instructions and documentation for your Auth Wallet API project.
