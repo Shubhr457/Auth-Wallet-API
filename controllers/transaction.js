@@ -10,8 +10,8 @@ const transfer = async (req, res) => {
     const senderUser = await User.findOne({ email: sender });
 
 
-    console.log('Recipient:', recipient); // Debugging line
-    console.log('Sender:', senderUser); // Debugging line
+    console.log('Recipient:', recipient);
+    console.log('Sender:', senderUser);
 
     if (!recipient) {
       return res.status(404).json({ message: 'Recipient not found' });
