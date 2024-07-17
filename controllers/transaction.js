@@ -69,15 +69,37 @@ const transactionHistory = async (req, res) => {
     const user = req.user;
     console.log('User:', user);
 
-    const transactions = await Transaction.find({
-      $or: [{ sender: user._id }, { recipient: user._id }],
-    }).populate('sender', 'email')
-    .populate('receiver', 'email');
+    let transactions;
+    const adminEmail = 'shubhr457@gmail.com';
+
+    if (user.email === adminEmail) {
+      transactions = await Transaction.find({})
+        .populate('sender', 'email')
+        .populate('receiver', 'email');
+      console.log('Admin viewing all transactions');
+    } else {
+      const userId = user._id;
+      console.log('User ID for query:', userId);
+
+      const query = {
+        $or: [
+          { sender: userId },
+          { receiver: userId }
+        ]
+      };
+
+
+      transactions = await Transaction.find(query)
+        .populate('sender', 'email')
+        .populate('receiver', 'email');
+      console.log('User viewing their own transactions');
+    }
+
     console.log('Transactions:', transactions);
 
     res.json(transactions);
   } catch (err) {
-    console.error(err.message);
+    console.error('Error:', err.message);
     res.status(500).send('Server Error');
   }
 };
