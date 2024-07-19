@@ -6,7 +6,7 @@ const userRoutes = require('./routes/userRoutes')
 const transaction = require('./routes/transaction');
 
 const app = express();
-const port = process.env.PORT; // Ensure this matches your .env file (case-sensitive)
+const port = process.env.PORT; 
 const DATABASE_URL = process.env.DATABASE_URL;
 
 app.use(cors());
